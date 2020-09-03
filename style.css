@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.side {
+    background-color: orange;
+    color: white;
+}
+
+#display {
+    grid-area: display;
+    text-align: right;
+    padding-top: 20px;
+    font-size: 35px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: rgb(158,158,158);
+    color: white;
+}
+
+#clear {
+    grid-area: ac;
+}
+
+#sign-change {
+    grid-area: sign;
+}
+
+#divide {
+    grid-area: divide;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#multiply {
+    grid-area: multiply;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#minus {
+    grid-area: minus;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#plus {
+    grid-area: plus;
+}
+
+#zero {
+    grid-area: zero;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+    border-radius: 0px 0px 0px 5px;
+}
+
+#decimal {
+    grid-area: decimal;
+}
+
+#equal {
+    grid-area: equal;
+    border-radius: 0px 0px 5px 0px;
+}
+
+.grid-container {
+    width: 243px;
+    height: 360px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    display: grid; 
+    grid-template-columns: 60px 60px 60px 60px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "display display display display"
+    "ac sign modulo divide"
+    "seven eight nine multiply"
+    "four five six minus"
+    "one two three plus"
+    "zero zero decimal equal";
+}
+
+.grid-container > div {
+    border: 1px solid #707070;
+    margin-bottom: -1px;
+    margin-right: -1px;
+    text-align: center;
+    padding: 15px;
+}
