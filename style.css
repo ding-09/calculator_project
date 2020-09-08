@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.operator {
+.operator, .calculate{
     background-color: orange;
     color: white;
 }
@@ -16,7 +16,7 @@
 #display {
     grid-area: display;
     border-radius: 5px 5px 0px 0px;
-    background-color: rgb(158,158,158);
+    background-color: rgb(158, 158, 158);
     color: white;
     font-family: 'Quicksand', sans-serif;
     height: 80px;
@@ -94,7 +94,7 @@
 #zero {
     grid-area: zero;
     text-align: left;
-    padding-left: 28px;
+    padding-left: 25px;
     border-radius: 0px 0px 0px 5px;
 }
 
@@ -113,8 +113,8 @@
     margin-top: 70px;
     border-radius: 10px;
     display: grid; 
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto 50px 50px 50px 50px 50px;
+    grid-template-columns: 60px 60px 60px 60px;
+    grid-template-rows: auto 55px 55px 55px 55px 55px;
     grid-template-areas: 
     "display display display display"
     "ac sign percent divide"
@@ -143,4 +143,11 @@
     font-size: 19px;
 }
 
+.num-btn-style {
+    background-color: rgb(155, 153, 153);
+}
 
+.operator-btn-style {
+    background-color: rgb(155, 153, 153);
+    color: gray;
+}
